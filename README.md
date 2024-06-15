@@ -26,8 +26,8 @@ gcc program.c -o file && ./program
 
    Danger: if below str2 is defined as str2[5] or less, instead of str2[6] which includes "/0" terminator,
    it behaves weirdly. str2 gets access to some other memory.
-   when you print it, its size will be greated than what we defined
-   if str2 is modified, if other memory is some system file, it may mess up our system
+   when you print it, its size will be greater than what we defined.
+   if str2 is modified, if other memory is some system file, it may mess up our system. Read C memory overflow.
 
 ```
     char str1[] = "hello";
@@ -36,9 +36,11 @@ gcc program.c -o file && ./program
     printf("%s \n", str2);
 ```
 
-## Python facts:
+## Python vs C:
 
-7. Was thinking when we implement a node in python, does the next variable store entire node info or just the pointer like in C. Turns out python uses reference semantics so its all good.
+7. C is compiled and executed. Python is directly executed by PVM.
+
+8. Was thinking when we implement a node in python, does the next variable store entire node info or just the pointer like in C. Turns out python uses reference semantics so its all good.
    Eg:
 
 ```
@@ -54,7 +56,15 @@ y = x
 // This is known as reference semantics, which is different from value semantics found in languages like C.
 ```
 
+9. Python datatypes that also exist in C ARE NOT THE SAME.
+   Eg:
+   - int in C, many other languages is 4 bytes. python int does not have any such limitation.
+   - C has static and dynamic arrays. Python lists are always dynamic.
+     (Forget about optimising space in python)
+
 ## DataStructures: how data is stored. useful for effecient storage, retrieval.
+
+array, linked list, hashmap, hastable, queue, stack, tree, trie, heap, priority queue, maps, graphs, disjoint sets
 
 ## Algorithms: Efficient way to do things (search, sort, path finding, dynamic programming..)
 
