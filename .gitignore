@@ -1,0 +1,4 @@
+.vscode
+
+# ignore c executables (have to give filenames as they dont have extensions)
+primitive
