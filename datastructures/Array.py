@@ -37,7 +37,7 @@ class Array():
         self.data = new_array
         self.size = new_size
 
-    def insert(self, index, value): #assuming index in within 2 times the size of array. (doubling for every resize)
+    def insert(self, index, value): #assuming index is within 2 times the size of array. (doubling for every resize)
         if index < 0:
             print('invalid index')
             return        
@@ -112,6 +112,7 @@ if __name__ == '__main__':
     l1.print()
 
 
+# Notes: python list is a dynamic array
 # Big O
 # append : O(1)
 # insert : O(n) -> worst case is insert at beginning

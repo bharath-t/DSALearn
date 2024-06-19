@@ -40,7 +40,7 @@ gcc program.c -o file && ./program
 
 7. C is compiled and executed. Python is directly executed by PVM.
 
-8. Was thinking when we implement a node in python, does the next variable store entire node info or just the pointer like in C. Turns out python uses reference semantics so its all good.
+8. Was thinking when we implement a node in python, does the next variable store entire node object or just the pointer like in C. Turns out python uses reference semantics so its all good.
    Eg:
 
 ```
